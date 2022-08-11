@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    min-height: 100vh;
+}
+.MainContainer {
+    background-color: #123456;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    inset: 0 0;
+}
+h2 {
+    text-align: center;
+}
+#formControl {
+    padding: 5px 8px;
+    width: 350px;
+    outline: none;
+}
+.MainContainer button {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+}
+.containScroll {
+    padding: 0 20px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.lists {
+    height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.listContainer {
+    position: relative;
+    width: 70vw;
+    margin-bottom: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+.listContainer .demoFont {
+    width: calc(70vw - 55px);
+    font-size: 25px;
+    overflow: auto;
+}
+.listContainer .demoBtn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: -7.5px;
+    display: grid;
+    place-items: center;
+}
+.listContainer .demoBtn svg:hover {
+    border-radius: 20%;
+    box-shadow: 0 0 7.5px 1px rgba(50, 167, 124, 0.75);
+}
+.cross {
+    font-size: 25px;
+    margin: 0 5px;
+    color: white;
+}
+@media (max-width: 600px) {
+    .listContainer .demoFont {
+        width: 91%;
+        font-size: 20px;
+    }
+    #formControl {
+        width: 250px;
+    }
+    .listContainer .demoBtn {
+        right: -10px;
+    }
+    .cross {
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .listContainer .demoFont {
+        width: 92%;
+        font-size: 16px;
+    }
+    #formControl {
+        width: 190px;
+    }
+    .listContainer {
+        min-width: 265px;
+    }
+    .listContainer .demoBtn {
+        right: -13px;
+    }
+    .cross {
+        font-size: 16px;
+    }
+}
